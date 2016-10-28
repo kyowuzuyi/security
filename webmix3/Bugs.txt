@@ -1,0 +1,6 @@
+1.UserListのページにすべてのUsersが表示されない、表示されるuserは友達のみである。(userlist.php 15行)
+2.UserListに自分を表示できない
+3.日記modeがチェックできない(?)
+4.readdiary.php?id=10で他のユーザーの日記をすべてを見えられる(readDiary.phpを参考)
+5.
+

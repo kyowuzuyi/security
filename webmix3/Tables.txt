@@ -1,0 +1,43 @@
+table users{
+	id
+	loginid
+	password
+	prof
+	privilege(“ÁŒ )
+	name
+	gender(«•Ê)	
+}
+
+
+table Diary{
+	id
+	write_user_id
+	title
+	content
+	mode
+	timestamp
+}
+
+table Message{
+	id
+	to_user_id
+	from_user_id
+	title
+	message
+	file
+	timestamp
+}
+
+table friends{
+	id
+	form_user_id
+	to_user_id
+	state
+}
+
+
+
+
+
+
+
