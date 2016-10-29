@@ -2,5 +2,27 @@
 2.UserListに自分を表示できない
 3.日記modeがチェックできない(?)
 4.readdiary.php?id=10で他のユーザーの日記をすべてを見えられる(readDiary.phpを参考)
-5.
+5.Sql Injection攻撃脆弱
+	User.php/Diary.php/FriendList.php/Message.phpのsave()の中に変数名にパラメータをバインドしていない(bindParam)
+6.htmlspecialchars問題
+	すべての$_POST[]はしていない
 
+7.passowrd制限していない(平文)
+
+8.SESSION_id更新問題
+
+9.管理ユーザーは一般ユーザーへメッシージできる(制限してない)
+	User::sendFriendRequest($to_user)
+	まずthis.idをチェックして、id!=masterの場合は次へ行く
+
+	User::sendMessage()
+	まずuser.idをチェックして、id!=masterの場合はsendできる
+
+	index.php::foreach($lst as $tmp){
+		if($user.id != master){
+				承認+拒否			
+			}else{
+				拒否
+			}
+		}
+		
