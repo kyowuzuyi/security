@@ -2,6 +2,7 @@
 2.UserListに自分を表示できない
 3.日記modeがチェックできない(????????????????????????)
 4.readdiary.php?id=10で他のユーザーの日記をすべてを見えられる(readDiary.phpを参考)
+  編集ボタンで他のユーザーの日記を編集できる
 5.Sql Injection攻撃脆弱
 	User.php/Diary.php/FriendList.php/Message.phpのsave()の中に変数名にパラメータをバインドしていない(bindParam)
 6.htmlspecialchars問題
